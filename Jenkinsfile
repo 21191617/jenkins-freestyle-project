@@ -8,7 +8,7 @@ pipeline {
     steps {
         sh '''
         #!/bin/bash
-        for1 in {1..5}: do echo "This is file\$i.text; done
+        for i in {1..5}; do echo "This is file \$i" > file\$i.txt; done
         '''}
         }
     }
