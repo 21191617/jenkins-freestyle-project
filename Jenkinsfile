@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages  {
         stage ('run script'){
-            steps {"sh run.sh" }
+            steps {sh "sh run.sh"}
     }
         stage ('generate artifacts'){
     steps {
